@@ -1,0 +1,20 @@
+Frpg: Formatting random password generator
+
+Parameter specifies:
+	-l n: lowercase letters (a-z) of n times
+	-u n: uppercase letters (A-Z)of n times
+	-n n: digital number (1-9) of n times
+	-s n: signs such !#$%&... of n times
+	-h: print help
+	-v: print version
+
+Example:
+	$ gcc -o frpg frpg.c
+	$ ./frpg -l 3 -n 4 -u 2 -s 1
+	eum4946XU^
+
+Characteristics:
+	No password length limitation
+	Support arbitrary format
+	Supports batch password generate
+	
