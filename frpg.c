@@ -114,6 +114,8 @@ int main(int argc, char *argv[])
 				printf("There Must got some thing wrong\n");
 				printf("%s", help);
 				return opterr;
+			default:
+				abort();
 		}
 	}
 	
