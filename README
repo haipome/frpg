@@ -3,7 +3,7 @@ Frpg: Formatting random password generator
 Parameter specifies:
 	-l n: lowercase letters (a-z) of n times
 	-u n: uppercase letters (A-Z) of n times
-	-n n: digital number (1-9) of n times
+	-n n: digital number (0-9) of n times
 	-s n: signs such !#$%&... of n times
 	-h: print help
 	-v: print version
