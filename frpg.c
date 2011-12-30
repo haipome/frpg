@@ -106,10 +106,10 @@ int main(int argc, char *argv[])
 				break;
 			case 'h':
 				printf("%s", help);
-				break;
+				return 0;
 			case 'v':
 				printf("%s", version);
-				break;
+				return 0;
 			case '?':
 				printf("There Must got some thing wrong\n");
 				printf("%s", help);
