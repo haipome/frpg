@@ -18,8 +18,8 @@ Parameter specifies:
 
 Example:
 	$ gcc -o frpg frpg.c
-	$ ./frpg -l 3 -n 4 -d 2 -s 1
-	eum4946XU^
+	$ ./frpg -l 3 -d 4 -u 2 -p 1
+	wds0397SU*
 
 Characteristics:
 	No password length limitation
