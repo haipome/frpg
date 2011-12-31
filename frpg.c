@@ -27,7 +27,7 @@ char * help =
 char * version = 
 	"Formatting random password generator\n"
 	"\n"
-	"version: 0.2\n"
+	"version: 0.2, 2012.01.01\n"
 	"author: yang@haipo.me\n"
 	;
 
@@ -232,7 +232,7 @@ int main(int argc, char *argv[])
 			case 'n':
 				if ((num = atoi(optarg)) > 0)
 					break;
-				else:
+				else
 					print_error();
 					return -1;
 			case 'h':
