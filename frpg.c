@@ -5,9 +5,9 @@
 
 #define LEN 1024
 
+char * full_name = "Formatting random password generator";
+
 char * help = 
-	"Formatting random password generator\n"
-	"\n"
 	"-l n: lowercase letters [a-z] of n times\n"
 	"-u n: uppercase letters [A-Z]of n times\n"
 	"-d n: digital number [1-9] of n times\n"
@@ -21,12 +21,10 @@ char * help =
 	"-h: print help\n"
 	"-v: print version\n"
 	"\n"
-	"default -w 8\n"
+	"default: -w 8\n"
 	;
 	
 char * version = 
-	"Formatting random password generator\n"
-	"\n"
 	"version: 0.2, 2012.01.01\n"
 	"author: yang@haipo.me\n"
 	;
@@ -194,7 +192,8 @@ int get_format(struct format * p, char c, char * s)
 
 void print_error()
 {
-	printf("There Must got some thing wrong\n");
+	printf("Note: there Must got some thing wrong!\n");
+	printf("      Please check the help.\n\n");
 	printf("%s", help);
 }
 
@@ -236,9 +235,11 @@ int main(int argc, char *argv[])
 					print_error();
 					return -1;
 			case 'h':
+				printf("%s\n\n", full_name);
 				printf("%s", help);
 				return 0;
 			case 'v':
+				printf("%s\n\n", full_name);
 				printf("%s", version);
 				return 0;
 			case '?':
