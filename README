@@ -1,16 +1,24 @@
 Frpg: Formatting random password generator
 
 Parameter specifies:
-	-l n: lowercase letters (a-z) of n times
-	-u n: uppercase letters (A-Z) of n times
-	-n n: digital number (0-9) of n times
-	-s n: signs such !#$%&... of n times
+	-l n: lowercase letters [a-z] of n times
+	-u n: uppercase letters [A-Z]of n times
+	-d n: digital number [1-9] of n times
+	-p n: punctuations such !#$%&... of n times
+	-s n: [A-Za-z] of n times
+	-e n: [a-z0-9] of n times
+	-E n: [A-Z0-9] of n times
+	-w n: [A-Za-z0-9] of n times
+	-a n: [A-Za-z0-9] and punctuations of n times
+	-n n: the number of passwords you need, default one
 	-h: print help
 	-v: print version
 
+	default -w 8
+
 Example:
 	$ gcc -o frpg frpg.c
-	$ ./frpg -l 3 -n 4 -u 2 -s 1
+	$ ./frpg -l 3 -n 4 -d 2 -s 1
 	eum4946XU^
 
 Characteristics:
