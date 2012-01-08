@@ -125,8 +125,10 @@ void process(struct memory * m, int n, char fun())
 	for (i = 0; i < n; ++i) {
 		if (m->i >= m->len) {
 			m->len *= 2;
-			if (!(m->p = realloc(m->p, m->len)))
+			if (!(m->p = realloc(m->p, m->len))) {
 				fprintf(stderr, "Realloc memory Error\n");
+				exit(-1);
+			}
 		}
 		(m->p)[m->i] = fun();
 		m->i += 1;
