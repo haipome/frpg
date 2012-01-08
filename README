@@ -1,4 +1,5 @@
-Frpg: Formatting random password generator
+Frpg: 	Formatting Random Password Generator
+	Get complex password with format to remember easy.
 
 Parameter specifies:
 	-l n: lowercase letters [a-z] of n times
