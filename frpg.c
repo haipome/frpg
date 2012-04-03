@@ -127,7 +127,7 @@ void process(struct memory * m, int n, char fun())
 			m->len *= 2;
 			if (!(m->p = realloc(m->p, m->len))) {
 				fprintf(stderr, "Realloc memory Error\n");
-				exit(-1);
+				exit(1);
 			}
 		}
 		(m->p)[m->i] = fun();
